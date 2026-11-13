@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "name": "bridge-revocation",
+  "description": "可信桥接在版本 2 撤销；版本 1 的结果与依据可复算，版本 2 重新分析。",
+  "tables": {
+    "population": {
+      "file": "bridge-revocation-population.jsonl",
+      "sha256": "19c80ea18120b6ce324f4394392d3fb29152dcf79badf06283af300256761efc",
+      "bytes": 149,
+      "rows": 3,
+      "fields": [
+        "id",
+        "birth_bucket",
+        "area"
+      ]
+    },
+    "records": {
+      "file": "bridge-revocation-records.jsonl",
+      "sha256": "8128d772578cc006bd50f3cc92c13e0c0cda0acc2f820aaa448a481b981ddbe0",
+      "bytes": 329,
+      "rows": 3,
+      "fields": [
+        "id",
+        "department",
+        "period",
+        "name_token",
+        "phone_token",
+        "birth_bucket"
+      ]
+    },
+    "bridges": {
+      "file": "bridge-revocation-bridges.jsonl",
+      "sha256": "2adab2b59e40cb37e8fb0a10f24625c57e56f1d646231549e2dfbf8147a493f9",
+      "bytes": 191,
+      "rows": 2,
+      "fields": [
+        "id",
+        "record",
+        "person",
+        "valid_from",
+        "valid_to",
+        "revoked_at"
+      ]
+    },
+    "comparisons": {
+      "file": "bridge-revocation-comparisons.jsonl",
+      "sha256": "3102b09d7e9c79b9d105f26a81878663fca15f692e6caeeb7afe58a1c916166b",
+      "bytes": 124,
+      "rows": 1,
+      "fields": [
+        "id",
+        "left",
+        "right",
+        "name_score",
+        "phone_score",
+        "birth_score",
+        "reviewed_same"
+      ]
+    }
+  }
+}

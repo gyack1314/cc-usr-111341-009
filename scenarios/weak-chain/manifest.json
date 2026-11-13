@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "name": "weak-chain",
+  "description": "弱相似链 a-b-c：a-c 无比较登记；团块内聚约束禁止链式传递，a-c 进入漏配审计。",
+  "tables": {
+    "population": {
+      "file": "weak-chain-population.jsonl",
+      "sha256": "9a6b10855547b32b0c9a7887036f4547c0681b1007ae0aeb3fc23c458452a67b",
+      "bytes": 147,
+      "rows": 3,
+      "fields": [
+        "id",
+        "birth_bucket",
+        "area"
+      ]
+    },
+    "records": {
+      "file": "weak-chain-records.jsonl",
+      "sha256": "f67940d8d13885b9238b0699df11da0ba20958fcb1e5f71af9e0dca7969fe288",
+      "bytes": 438,
+      "rows": 4,
+      "fields": [
+        "id",
+        "department",
+        "period",
+        "name_token",
+        "phone_token",
+        "birth_bucket"
+      ]
+    },
+    "bridges": {
+      "file": "weak-chain-bridges.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "rows": 0,
+      "fields": [
+        "id",
+        "record",
+        "person",
+        "valid_from",
+        "valid_to",
+        "revoked_at"
+      ]
+    },
+    "comparisons": {
+      "file": "weak-chain-comparisons.jsonl",
+      "sha256": "c677253dd8bb3f22cc375f084072d68902890da4b29be1984e8c537de1d0a664",
+      "bytes": 379,
+      "rows": 3,
+      "fields": [
+        "id",
+        "left",
+        "right",
+        "name_score",
+        "phone_score",
+        "birth_score",
+        "reviewed_same"
+      ]
+    }
+  }
+}

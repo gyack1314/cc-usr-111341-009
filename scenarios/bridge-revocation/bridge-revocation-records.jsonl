@@ -1,0 +1,3 @@
+{"birth_bucket": "old", "department": "A", "id": "r1", "name_token": "N1", "period": 1, "phone_token": "P1"}
+{"birth_bucket": "old", "department": "B", "id": "r2", "name_token": "N1", "period": 1, "phone_token": "P2"}
+{"birth_bucket": "young", "department": "A", "id": "r3", "name_token": "N3", "period": 1, "phone_token": "P3"}

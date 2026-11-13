@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "name": "phone-change",
+  "description": "同一人换号后跨部门出现；号码差异不提供异人证据。",
+  "tables": {
+    "population": {
+      "file": "phone-change-population.jsonl",
+      "sha256": "59eb75a1999a322b04595ca508ca5d883bd2c4773ae3e18c751201ddf9db1317",
+      "bytes": 100,
+      "rows": 2,
+      "fields": [
+        "id",
+        "birth_bucket",
+        "area"
+      ]
+    },
+    "records": {
+      "file": "phone-change-records.jsonl",
+      "sha256": "b2b0d8649b12f773537ff75662dfb446333dcec25c17396dfc53733fefc0c17c",
+      "bytes": 329,
+      "rows": 3,
+      "fields": [
+        "id",
+        "department",
+        "period",
+        "name_token",
+        "phone_token",
+        "birth_bucket"
+      ]
+    },
+    "bridges": {
+      "file": "phone-change-bridges.jsonl",
+      "sha256": "c95acabd2524859a4fec1af01e140e89bfddd8d9114360649ef30d7708daf9be",
+      "bytes": 97,
+      "rows": 1,
+      "fields": [
+        "id",
+        "record",
+        "person",
+        "valid_from",
+        "valid_to",
+        "revoked_at"
+      ]
+    },
+    "comparisons": {
+      "file": "phone-change-comparisons.jsonl",
+      "sha256": "0f2f2dc99f827a766d3369ce2f4861ef3b7add2c187b963ed50725cf1bbc97c5",
+      "bytes": 374,
+      "rows": 3,
+      "fields": [
+        "id",
+        "left",
+        "right",
+        "name_score",
+        "phone_score",
+        "birth_score",
+        "reviewed_same"
+      ]
+    }
+  }
+}

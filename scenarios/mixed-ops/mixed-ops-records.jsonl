@@ -1,0 +1,6 @@
+{"birth_bucket": "old", "department": "A", "id": "r1", "name_token": "N1", "period": 1, "phone_token": "P1"}
+{"birth_bucket": "old", "department": "A", "id": "r2", "name_token": "N1", "period": 1, "phone_token": "P1"}
+{"birth_bucket": "old", "department": "B", "id": "r3", "name_token": "N1", "period": 1, "phone_token": "P2"}
+{"birth_bucket": "old", "department": "C", "id": "r4", "name_token": "N1", "period": 1, "phone_token": "P4"}
+{"birth_bucket": "young", "department": "A", "id": "r5", "name_token": "N2", "period": 2, "phone_token": null}
+{"birth_bucket": "young", "department": "B", "id": "r6", "name_token": "N2", "period": 3, "phone_token": "P6"}

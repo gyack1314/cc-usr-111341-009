@@ -1,0 +1,3 @@
+{"birth_score": 0.9, "id": "c1", "left": "r1", "name_score": 0.9, "phone_score": 0.8, "reviewed_same": null, "right": "r2"}
+{"birth_score": 0.9, "id": "c2", "left": "r2", "name_score": 0.9, "phone_score": 0.8, "reviewed_same": null, "right": "r3"}
+{"birth_score": 0.9, "id": "c3", "left": "r1", "name_score": 0.9, "phone_score": 0.8, "reviewed_same": null, "right": "r3"}

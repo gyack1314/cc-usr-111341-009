@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "name": "calibration-bias",
+  "description": "含 reviewed_same 标注，且标注只在最高分层；说明选择偏差并给出补抽样方案。",
+  "tables": {
+    "population": {
+      "file": "calibration-bias-population.jsonl",
+      "sha256": "1c5a8cbb5c5ec499b0622c59429d538b9e7adc39aabb02e2551887a4a306e6a5",
+      "bytes": 2791,
+      "rows": 56,
+      "fields": [
+        "id",
+        "birth_bucket",
+        "area"
+      ]
+    },
+    "records": {
+      "file": "calibration-bias-records.jsonl",
+      "sha256": "ab4058d2d6331c5ad994364f498ef94510dc02967c13918ce5965250e8bb228a",
+      "bytes": 6245,
+      "rows": 56,
+      "fields": [
+        "id",
+        "department",
+        "period",
+        "name_token",
+        "phone_token",
+        "birth_bucket"
+      ]
+    },
+    "bridges": {
+      "file": "calibration-bias-bridges.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "rows": 0,
+      "fields": [
+        "id",
+        "record",
+        "person",
+        "valid_from",
+        "valid_to",
+        "revoked_at"
+      ]
+    },
+    "comparisons": {
+      "file": "calibration-bias-comparisons.jsonl",
+      "sha256": "022c4425e151c8d655605edc4ca59628871b7087e79c939ef463c612a668c51e",
+      "bytes": 3628,
+      "rows": 28,
+      "fields": [
+        "id",
+        "left",
+        "right",
+        "name_score",
+        "phone_score",
+        "birth_score",
+        "reviewed_same"
+      ]
+    }
+  }
+}

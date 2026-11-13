@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "name": "mixed-ops",
+  "description": "组合场景：同名不同人、改号、多次上报、弱链与未登记比较的漏配风险并存。",
+  "tables": {
+    "population": {
+      "file": "mixed-ops-population.jsonl",
+      "sha256": "e5c0bac59323d6a78c7f8908a8dab2b302cd3e24797062af581136673c9edf08",
+      "bytes": 149,
+      "rows": 3,
+      "fields": [
+        "id",
+        "birth_bucket",
+        "area"
+      ]
+    },
+    "records": {
+      "file": "mixed-ops-records.jsonl",
+      "sha256": "9746755aa0ce91b1b558541602b6ecc5da23a435aa816d88b82e38da695fefa9",
+      "bytes": 658,
+      "rows": 6,
+      "fields": [
+        "id",
+        "department",
+        "period",
+        "name_token",
+        "phone_token",
+        "birth_bucket"
+      ]
+    },
+    "bridges": {
+      "file": "mixed-ops-bridges.jsonl",
+      "sha256": "16dfdbf29aadddbae1a3860b9f44d2113e6c9a3f37bbd7d6001739eed7e3bb73",
+      "bytes": 97,
+      "rows": 1,
+      "fields": [
+        "id",
+        "record",
+        "person",
+        "valid_from",
+        "valid_to",
+        "revoked_at"
+      ]
+    },
+    "comparisons": {
+      "file": "mixed-ops-comparisons.jsonl",
+      "sha256": "f658252e9c604489a694f7982eb0822c76b4841390a8546865ce0f3cd2f2a858",
+      "bytes": 372,
+      "rows": 3,
+      "fields": [
+        "id",
+        "left",
+        "right",
+        "name_score",
+        "phone_score",
+        "birth_score",
+        "reviewed_same"
+      ]
+    }
+  }
+}

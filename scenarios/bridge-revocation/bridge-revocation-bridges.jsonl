@@ -1,0 +1,2 @@
+{"id": "b1", "person": "u1", "record": "r1", "revoked_at": null, "valid_from": 1, "valid_to": 3}
+{"id": "b2", "person": "u1", "record": "r2", "revoked_at": 2, "valid_from": 1, "valid_to": 3}

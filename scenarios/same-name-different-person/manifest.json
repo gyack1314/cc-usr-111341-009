@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "name": "same-name-different-person",
+  "description": "同名同生日但由可信桥接锚定到不同 person，互斥约束禁止合并。",
+  "tables": {
+    "population": {
+      "file": "same-name-different-person-population.jsonl",
+      "sha256": "9a6b10855547b32b0c9a7887036f4547c0681b1007ae0aeb3fc23c458452a67b",
+      "bytes": 147,
+      "rows": 3,
+      "fields": [
+        "id",
+        "birth_bucket",
+        "area"
+      ]
+    },
+    "records": {
+      "file": "same-name-different-person-records.jsonl",
+      "sha256": "6d18d6a0cf335dae9278d5f38bab4ed856151adb2166a6113851796050b7f0d7",
+      "bytes": 327,
+      "rows": 3,
+      "fields": [
+        "id",
+        "department",
+        "period",
+        "name_token",
+        "phone_token",
+        "birth_bucket"
+      ]
+    },
+    "bridges": {
+      "file": "same-name-different-person-bridges.jsonl",
+      "sha256": "dc0b794cf8ff776e8e10ee9ba2f933f710958f06a0ab2c0285170f3e73c284fd",
+      "bytes": 194,
+      "rows": 2,
+      "fields": [
+        "id",
+        "record",
+        "person",
+        "valid_from",
+        "valid_to",
+        "revoked_at"
+      ]
+    },
+    "comparisons": {
+      "file": "same-name-different-person-comparisons.jsonl",
+      "sha256": "0570ce96df292d1ecefc9032d2093b88c42ec6ee5fa3444a5e83adefe12aea0c",
+      "bytes": 248,
+      "rows": 2,
+      "fields": [
+        "id",
+        "left",
+        "right",
+        "name_score",
+        "phone_score",
+        "birth_score",
+        "reviewed_same"
+      ]
+    }
+  }
+}

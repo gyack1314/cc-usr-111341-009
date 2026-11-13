@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "name": "anchor-conflict",
+  "description": "相似边 a-b、b-c 均强，但 a、c 锚定不同可信 person；链式闭包违反互斥约束。",
+  "tables": {
+    "population": {
+      "file": "anchor-conflict-population.jsonl",
+      "sha256": "7213bbde0c9c56f2dee3aa7c091b4dd3aecb2c8543a13e91afc0da1271ee50aa",
+      "bytes": 147,
+      "rows": 3,
+      "fields": [
+        "id",
+        "birth_bucket",
+        "area"
+      ]
+    },
+    "records": {
+      "file": "anchor-conflict-records.jsonl",
+      "sha256": "4c57db76204050bb48735c4f6c574bf7c0ae3124e20a466bdfa2713b77fa2fa5",
+      "bytes": 327,
+      "rows": 3,
+      "fields": [
+        "id",
+        "department",
+        "period",
+        "name_token",
+        "phone_token",
+        "birth_bucket"
+      ]
+    },
+    "bridges": {
+      "file": "anchor-conflict-bridges.jsonl",
+      "sha256": "6ec15eb279518505fb2a11eeabdbee9ee209cb72f13063f1a1598605d77f9c82",
+      "bytes": 194,
+      "rows": 2,
+      "fields": [
+        "id",
+        "record",
+        "person",
+        "valid_from",
+        "valid_to",
+        "revoked_at"
+      ]
+    },
+    "comparisons": {
+      "file": "anchor-conflict-comparisons.jsonl",
+      "sha256": "d845867132aede076dff706416df0263cad8ca8c25482edcb118e54e8475ba46",
+      "bytes": 372,
+      "rows": 3,
+      "fields": [
+        "id",
+        "left",
+        "right",
+        "name_score",
+        "phone_score",
+        "birth_score",
+        "reviewed_same"
+      ]
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "name": "duplicate-submission",
+  "description": "同部门同一人多次上报（同姓名、同号码、同出生桶），覆盖只计一次。",
+  "tables": {
+    "population": {
+      "file": "duplicate-submission-population.jsonl",
+      "sha256": "59eb75a1999a322b04595ca508ca5d883bd2c4773ae3e18c751201ddf9db1317",
+      "bytes": 100,
+      "rows": 2,
+      "fields": [
+        "id",
+        "birth_bucket",
+        "area"
+      ]
+    },
+    "records": {
+      "file": "duplicate-submission-records.jsonl",
+      "sha256": "c128c0adf560a7d46cd1bbd3cb945a1d1d9e2702f7bac93ca8fe5dc3df2bc908",
+      "bytes": 436,
+      "rows": 4,
+      "fields": [
+        "id",
+        "department",
+        "period",
+        "name_token",
+        "phone_token",
+        "birth_bucket"
+      ]
+    },
+    "bridges": {
+      "file": "duplicate-submission-bridges.jsonl",
+      "sha256": "c95acabd2524859a4fec1af01e140e89bfddd8d9114360649ef30d7708daf9be",
+      "bytes": 97,
+      "rows": 1,
+      "fields": [
+        "id",
+        "record",
+        "person",
+        "valid_from",
+        "valid_to",
+        "revoked_at"
+      ]
+    },
+    "comparisons": {
+      "file": "duplicate-submission-comparisons.jsonl",
+      "sha256": "0006e24fe3fda498f45fd7df9c00b36e879867c06108484f2b5174459427d6d6",
+      "bytes": 124,
+      "rows": 1,
+      "fields": [
+        "id",
+        "left",
+        "right",
+        "name_score",
+        "phone_score",
+        "birth_score",
+        "reviewed_same"
+      ]
+    }
+  }
+}

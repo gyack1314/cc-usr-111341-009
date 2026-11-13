@@ -1,0 +1,3 @@
+{"birth_score": 0.73, "id": "c1", "left": "r1", "name_score": 0.72, "phone_score": null, "reviewed_same": null, "right": "r2"}
+{"birth_score": 0.72, "id": "c2", "left": "r2", "name_score": 0.71, "phone_score": null, "reviewed_same": null, "right": "r3"}
+{"birth_score": 0.2, "id": "c3", "left": "r1", "name_score": 0.1, "phone_score": 0.05, "reviewed_same": null, "right": "r4"}
