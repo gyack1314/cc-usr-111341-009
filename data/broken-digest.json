@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "tables": {
+    "population": {
+      "file": "normal-population.jsonl",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "bytes": 149,
+      "rows": 3,
+      "fields": [
+        "id",
+        "birth_bucket",
+        "area"
+      ]
+    },
+    "records": {
+      "file": "normal-records.jsonl",
+      "sha256": "fc65886cfcfefbd46b522a5f0f6bb7b39afd31b5ae9ed5a49aec5f316f09eb85",
+      "bytes": 329,
+      "rows": 3,
+      "fields": [
+        "id",
+        "department",
+        "period",
+        "name_token",
+        "phone_token",
+        "birth_bucket"
+      ]
+    },
+    "bridges": {
+      "file": "normal-bridges.jsonl",
+      "sha256": "149318be84c7ba1b6fcd543a39dba34020adeec7825206aef5c9bb1d6bca6bb4",
+      "bytes": 97,
+      "rows": 1,
+      "fields": [
+        "id",
+        "record",
+        "person",
+        "valid_from",
+        "valid_to",
+        "revoked_at"
+      ]
+    },
+    "comparisons": {
+      "file": "normal-comparisons.jsonl",
+      "sha256": "bbe17a95f3abf3e050dc47e2dd6226b2d74772ce387231c5bb277d7f60180b06",
+      "bytes": 124,
+      "rows": 1,
+      "fields": [
+        "id",
+        "left",
+        "right",
+        "name_score",
+        "phone_score",
+        "birth_score",
+        "reviewed_same"
+      ]
+    }
+  }
+}
